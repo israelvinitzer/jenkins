@@ -10,10 +10,8 @@ pipeline {
             steps {
                 sh '''
                    echo "$GIT_BRANCH"
-                   whoami
-                   cd /Users/ivinitzer/Documents/repo/azure-voting-app-redis
                    docker ps -a
-                   docker build -t jenkins-pipeline .
+                   docker build -t jenkins-pipeline /Users/ivinitzer/Documents/repo/azure-voting-app-redis
                    docker images -a
                    '''
             }
