@@ -13,6 +13,8 @@ pipeline {
                    whoami
                    cd /tmp
                    docker ps -a
+                   docker build -t jenkins-pipeline .
+                   docker images -a
                    '''
             }
         }
