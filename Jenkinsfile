@@ -5,7 +5,7 @@ pipeline {
         stage('Verify Branch') {
             steps {
                 echo "$GIT_BRANCH"
-                sh("echo ${STATEMENT}")
+                sh("echo walla")
             }
         }
     }
