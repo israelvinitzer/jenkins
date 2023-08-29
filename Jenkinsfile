@@ -4,8 +4,11 @@ pipeline {
     stages {
         stage('Verify Branch') {
             steps {
-                echo "$GIT_BRANCH"
-                sh 'docker ps -a'
+                sh '''
+                   echo "$GIT_BRANCH"
+                   cd /var/tmp
+                   docker ps -a
+                   '''
             }
         }
     }
