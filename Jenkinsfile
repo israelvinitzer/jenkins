@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        PATH = "/usr/local/bin:${env.PATH}"
+    }
+
     stages {
         stage('Verify Branch') {
             steps {
@@ -8,7 +12,7 @@ pipeline {
                    echo "$GIT_BRANCH"
                    whoami
                    cd /tmp
-                   /usr/local/bin/docker ps -a
+                   docker ps -a
                    '''
             }
         }
