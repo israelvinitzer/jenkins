@@ -6,7 +6,7 @@ pipeline {
             steps {
                 sh '''
                    echo "$GIT_BRANCH"
-                   cd /var/tmp
+                   cd /tmp
                    docker ps -a
                    '''
             }
