@@ -6,6 +6,7 @@ pipeline {
             steps {
                 sh '''
                    echo "$GIT_BRANCH"
+                   whoami
                    cd /tmp
                    docker ps -a
                    '''
