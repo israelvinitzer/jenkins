@@ -8,7 +8,7 @@ pipeline {
                    echo "$GIT_BRANCH"
                    whoami
                    cd /tmp
-                   docker ps -a
+                   /usr/local/bin/docker ps -a
                    '''
             }
         }
