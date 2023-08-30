@@ -13,7 +13,7 @@ pipeline {
                    cd /tmp/azure-voting-app-redis/azure-vote
                    ls
                    docker ps -a
-                   ##docker build -t jenkins-pipeline .
+                   docker build -t jenkins-pipeline .
                    docker images -a
                    '''
             }
