@@ -14,7 +14,7 @@ pipeline {
             }
         }
         stage('Run on Master') {
-            when { branch 'master' }
+            when { branch 'master2' }
             steps {
                 sh '''
                    echo welcome to Master branch
