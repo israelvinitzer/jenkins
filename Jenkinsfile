@@ -20,11 +20,12 @@ pipeline {
                    echo welcome to Master branch
                    '''
             }
+        }   
         stage('Approve to deploy') {
             steps {
                 input message "Deploy?"
             }    
-            
         }
     }
 }
+
