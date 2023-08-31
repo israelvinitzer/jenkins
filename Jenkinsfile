@@ -23,7 +23,7 @@ pipeline {
         }   
         stage('Approve to deploy') {
             steps {
-                input message "Deploy?"
+                input message: "Deploy?"
             }    
         }
     }
